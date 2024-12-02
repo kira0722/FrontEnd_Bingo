@@ -17,8 +17,8 @@ function Lobby() {
       timer = setInterval(() => setTimeLeft((prev) => prev - 1), 1000);
     } else if (timeLeft === 0) {
       setIsLobbyOpen(false);
-      alert("Comenzando el juego");
-      navigate("/Lobby");
+      alert("El juego ha comenzado 😊 ¡mucha suerte!");
+      navigate("/Game");
     }
     return () => clearInterval(timer);
   }, [isLobbyOpen, timeLeft, navigate]);
@@ -42,8 +42,8 @@ function Lobby() {
           contentLabel="Lobby"
           style={{
             content: {
-              top: "430px",
-              left: "850px",
+              top: "300px",
+              left: "650px",
               right: "auto",
               bottom: "auto",
               marginRight: "-50%",
@@ -52,7 +52,8 @@ function Lobby() {
               textAlign: "center",
               backgroundColor: "#fff",
             },
-          }}>
+          }}
+        >
           <h2>Esperando jugadores...</h2>
           <p>Tiempo restante: {timeLeft} segundos</p>
           <button className="learn-more" onClick={() => setIsLobbyOpen(false)}>

@@ -56,5 +56,3 @@ button span:hover {
 button span:not(hover) {
     transition: all 1s;
 }
-  
-  
