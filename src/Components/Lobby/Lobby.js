@@ -42,8 +42,8 @@ function Lobby() {
           contentLabel="Lobby"
           style={{
             content: {
-              top: "300px",
-              left: "650px",
+              top: "430px",
+              left: "850px",
               right: "auto",
               bottom: "auto",
               marginRight: "-50%",
